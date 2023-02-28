@@ -58,7 +58,53 @@
 
             <div style="width: 60%; display: grid;">
                 <h2 class="section-title"></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe vitae voluptates corporis repellat autem nam corrupti officiis inventore ea modi iste facere pariatur debitis et, totam ex magnam earum voluptatem.</p>
+
+                <!-- Typewriter animated text -->
+
+                <h4 class="typewriter">Connor</h4>
+
+                <style>
+                    .typewriter{
+                        font-size: clamp(1rem, 3vw + 1rem, 4rem);
+                        position: relative;
+                        font-family: 'Courier New', Courier, monospace;
+                    }
+
+                    .typewriter::before,
+                    .typewriter::after{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        
+                    }
+
+                    .typewriter::before{
+                        background: magenta;
+                        animation: 
+                            typewriter 5s steps(6) forwards;
+                    }
+                    
+                    /* .typewriter::after{
+                        background: teal;
+                    } */
+
+
+                    @keyframes typewriter {
+                        to {
+                            left: 100%;
+                        }
+                    }
+
+                </style>
+
+
+                <!-- Typewriter animated text End -->
+
+
+                <p class="fade-in">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe vitae voluptates corporis repellat autem nam corrupti officiis inventore ea modi iste facere pariatur debitis et, totam ex magnam earum voluptatem.</p>
             </div>
 
             <div style="margin-left: auto;">
@@ -91,9 +137,27 @@
     <!-- Diagonal Section End -->
 
     <section style="padding-block: 5rem;">
-        <div class="wrapper">
+        <div class="wrapper" style="display: flex;">
             <h2 class="section-title"></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe vitae voluptates corporis repellat autem nam corrupti officiis inventore ea modi iste facere pariatur debitis et, totam ex magnam earum voluptatem.</p>
+
+            <!-- Fade in animation script  -->
+
+                <p class="col fade-in">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe vitae voluptates corporis repellat autem nam corrupti officiis inventore ea modi iste facere pariatur debitis et, totam ex magnam earum voluptatem.
+                </p>
+                <p class="col fade-in">
+                    Lorem ipsum dae voluptates corporis repellat autem nam corrupti officiis inventore ea modi 
+                </p>
+                <p class="col fade-in">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe vitae voluptates corporis repellat autem nam corrupti officiis inventore ea modi iste facere pariatur debitis et, totam ex magnam earum voluptatem.
+                </p>
+                <p class="col fade-in">
+                    orporis repellat autem nam corrupti officiis inventore ea modi iste facere pariatur debitis et
+                </p>
+                <script defer src="js/animate-fade-in-viewport.js"></script>
+
+            <!-- Fade in animation script End -->
+
         </div>
     </section>
 
@@ -112,7 +176,7 @@
     <section style="padding-block: 5rem;">
         <div class="wrapper">
             <h2 class="section-title"></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe vitae voluptates corporis repellat autem nam corrupti officiis inventore ea modi iste facere pariatur debitis et, totam ex magnam earum voluptatem.</p>
+            <p class="fade-in">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe vitae voluptates corporis repellat autem nam corrupti officiis inventore ea modi iste facere pariatur debitis et, totam ex magnam earum voluptatem.</p>
         </div>
     </section>
 
@@ -121,7 +185,7 @@
     <section class="waves">
         <div class="wrapper">
             <h2 class="section-title">Waves</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe vitae voluptates corporis repellat autem nam corrupti officiis inventore ea modi iste facere pariatur debitis et, totam ex magnam earum voluptatem.</p>
+            <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe vitae voluptates corporis repellat autem nam corrupti officiis inventore ea modi iste facere pariatur debitis et, totam ex magnam earum voluptatem.</p>
         </div>
     </section>
     
@@ -130,7 +194,7 @@
     <section style="padding-block: 5rem;">
         <div class="wrapper">
             <h2 class="section-title"></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe vitae voluptates corporis repellat autem nam corrupti officiis inventore ea modi iste facere pariatur debitis et, totam ex magnam earum voluptatem.</p>
+            <p class="fade-in">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe vitae voluptates corporis repellat autem nam corrupti officiis inventore ea modi iste facere pariatur debitis et, totam ex magnam earum voluptatem.</p>
         </div>
     </section>
 </body>

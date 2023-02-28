@@ -8,6 +8,8 @@
 
 :root{
     --body-bg: hsl(0,0%, 12%);
+    --header-size: clamp(2rem, -0.875rem + 8.333vw, 3.0rem);
+    --text-size-1: calc(16px + 0.2vw);
 }
 
 html{
@@ -17,19 +19,25 @@ html{
 body{
     background: var(--body-bg);
     font-family: system-ui;
-    font-size: 1.25rem;
     line-height: 1.5;
     margin: 0;
 }
 
-.site-title{
-    text-align: center;
-    font-size: 3rem;
+p{
+    font-size: var(--text-size-1);
+    line-height: 1.5;
 }
 
 .section-title{
-    font-size: 2.25rem;
+    font-size: var(--header-size);
+    line-height: 1;
 }
+
+.site-title{
+    text-align: center;
+    font-size: clamp(2.5rem, 10vw + 1rem, 5rem);
+}
+
 
 
 /* Diagonal Section */
@@ -205,3 +213,40 @@ body{
         translateY(-1rem);
 }
 /* Pop Out Image Effect End */
+
+
+/* Fade In Animation */
+
+.col{
+    width: 25%;
+    padding: 1em;
+}
+
+.col:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.col:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.col:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+.col:nth-child(5) {
+    transition-delay: 800ms;
+}
+
+.fade-in{
+    opacity: 0;
+    filter: blur(1px);
+    transform: translateX(-100%);
+    transition: all 1.2s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
